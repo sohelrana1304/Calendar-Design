@@ -1,5 +1,68 @@
-/* .month{
+.wrapper{
     display: flex;
-    align-content: center;
+    width:100vw;
+    height:100vh;
+    background-color:aliceblue;
+}
+.calendar{
+    margin: auto;
+    width: 600px;
+    height: 400px;
+    background-color: white;
+}
+
+.month{
+    float: left;
+    padding: 15px;
+    margin-left: 50px;
+    margin-top: 20px;
     
-} */
+}
+.year{
+    float: right;
+    padding: 15px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.weekends{
+    display: flex;
+    margin-top: 100px;
+    padding: 5px;
+}
+.weekends div{
+    width: 14.28%;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px 0;
+}
+.days{
+    display: flex;
+    flex-wrap: wrap;
+}
+.days div{
+    width: 14.28%;
+    text-align: center;
+    padding: 10px 0px;
+    transition: all 0.4s;
+}
+.days div:hover{
+    background-color: #dfe6e9;
+    cursor: pointer;
+}
+
+.date-holder{
+    float: left;
+    margin-left: 100px;
+    padding: 11px 15px;
+    text-align: center;
+}
+.enter-button{
+    float: right;
+    margin-right: 100px;
+    padding: 12px 30px;
+    background-color: #3F72AF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

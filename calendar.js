@@ -1,13 +1,28 @@
+// let cells = "";
 
-var date = document.getElementById('date');
-date.addEventListener('blur', getValue);
+// for(let i=1; i<=30; i++){
+//     cells += "<div>" + i + "</div>";
+// }
 
-function getValue() {
-    dateValue = date.value;
-    var ths = document.getElementsByTagName('th');
-    for (var i = 0; i < ths.length; i++) {
-        ths.style.backgroundColor = 'none';
+// document.getElementsByClassName("days")[0].innerHTML = cells
+
+
+
+let change = document.getElementById("enter").onclick = function () {
+    
+    let date = document.getElementById("date").value;
+
+    let changeColor = document.getElementById(`${date}`)
+
+    // console.log(color, date)
+    
+    if (changeColor.style.background == "green") {
+        changeColor.style.background = "white"
     }
-    var newDate = document.getElementById('dateValue');
-    newDate.style.backgroundColor = 'green';
+    else{
+        changeColor.style.background = "green"
+    }
+
 }
+
+
