@@ -7,7 +7,7 @@
 .calendar{
     margin: auto;
     width: 600px;
-    height: 400px;
+    height: 420px;
     background-color: white;
 }
 
@@ -53,6 +53,7 @@
 
 .date-holder{
     float: left;
+    margin-top: 15px;
     margin-left: 100px;
     padding: 11px 15px;
     text-align: center;
@@ -60,9 +61,19 @@
 .enter-button{
     float: right;
     margin-right: 100px;
+    margin-top: 15px;
     padding: 12px 30px;
     background-color: #3F72AF;
     color: white;
     border: none;
     cursor: pointer;
+}
+.highLight{
+    background-color: green;
+}
+.highLight2{
+    background-color: white;
+}
+.white{
+    background-color: white;
 }
