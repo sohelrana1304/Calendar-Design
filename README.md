@@ -10,7 +10,7 @@ You can use internet for any reference.
 
 ## Functionality Explanation:
 1. Userselect Month and Yearfrom dropdown.
-2. If user put any date in ```Enter Any Date``` input box and press ```Enter```, change inputted dated cell
+2. If user put any date in `Enter Any Date` input box and press `Enter`, change inputted dated cell
 background color. (If cell background color is White, changed to Green. If cell background color is Green, changed to white )
 
 ### Example for 2th point:
