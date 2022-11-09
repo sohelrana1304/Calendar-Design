@@ -66,6 +66,7 @@ function populateDays() {
     }
 
     let toBeChange = document.getElementById("date").value;
+    
 
     let cells = "";
     for (let i = firstDayofMonth; i > 0; i--) {
