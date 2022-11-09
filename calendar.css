@@ -7,7 +7,7 @@
 .calendar{
     margin: auto;
     width: 600px;
-    height: 420px;
+    height: auto;
     background-color: white;
 }
 
@@ -62,18 +62,14 @@
     float: right;
     margin-right: 100px;
     margin-top: 15px;
+    margin-bottom: 15px;
     padding: 12px 30px;
     background-color: #3F72AF;
     color: white;
     border: none;
     cursor: pointer;
+    
 }
 .highLight{
     background-color: green;
-}
-.highLight2{
-    background-color: white;
-}
-.white{
-    background-color: white;
 }

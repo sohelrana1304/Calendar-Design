@@ -64,30 +64,31 @@ function populateDays() {
             dayNum = 28;
         }
     }
-
+    // Taking input from place holder
     let toBeChange = document.getElementById("date").value;
-    
 
     let cells = "";
+    // It will fill dates from previous month
     for (let i = firstDayofMonth; i > 0; i--) {
         cells += "<div>" + "" + "</div>"
     }
+    // Adding dates
     for (let i = 1; i <= dayNum; i++) {
         if (i == toBeChange) {
-            cells += "<div class='highLight' id='color'>" + `${i}` + "</div>";
+            cells += "<div class='highLight'>" + `${i}` + "</div>";
         } else {
             cells += "<div>" + `${i}` + "</div>";
         }
     }
     document.getElementsByClassName("days")[0].innerHTML = cells
-    
-}
 
+}
 populateDays()
 
 yearSelect.onchange = function () {
     populateDays(yearSelect.value)
 }
+
 monthSelect.onchange = function () {
     populateDays(monthSelect.value)
 }
@@ -95,24 +96,3 @@ monthSelect.onchange = function () {
 dateValue.onclick = function () {
     populateDays(date.value)
 }
-
-
-
-
-// let change = document.getElementById("enter").onclick = function () {
-
-//     let date = document.getElementById("date").value;
-//     console.log(date)
-
-//     let changeColor = document.getElementById(`${date}`)
-
-//     // console.log(color, date)
-
-//     if (changeColor.style.background == "green") {
-//         changeColor.style.background = "white"
-//     }
-//     else {
-//         changeColor.style.background = "green"
-//     }
-
-// }
